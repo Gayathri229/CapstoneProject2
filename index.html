@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .intro-page {
+        height: 100%;
+        background-color: #cee6f3;
+        padding: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+        font-family: "Sacramento", cursive;
+        font-size: 30px;
+      }
+
+      .photo img {
+        height: 400px;
+      }
+
+      .about-title {
+        background-color: #cee6f3;
+        text-align: center;
+        display: block;
+        height: 40%;
+        padding: 75px;
+        font-family: "Lato", sans-serif;
+        font-size: 30px;
+        margin-bottom: 50px;
+      }
+
+      .project-title {
+        background-color: #cee6f3;
+        padding-bottom: 30px;
+        margin-top: 30px;
+        padding: 50px;
+      }
+
+      .project-title h2 {
+        font-size: 30px;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-rows: repeat(2, 250px);
+        grid-template-columns: repeat(3, 400px);
+        gap: 20px;
+        background-color: #cee6f3;
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
+      }
+
+      #project1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+
+      #project1 img {
+        height: 200px;
+        width: 300px;
+      }
+
+      #project2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+
+      #project2 img {
+        height: 200px;
+        width: 300px;
+      }
+
+      #project3 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+
+      #project3 img {
+        height: 200px;
+        width: 300px;
+      }
+
+      #project4 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+
+      #project4 img {
+        height: 200px;
+        width: 300px;
+      }
+
+      #project5 {
+        grid-row: 1/2;
+        grid-column: 3/4;
+      }
+
+      #project5 img {
+        height: 200px;
+        width: 300px;
+      }
+
+      #project6 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+      }
+
+      #project6 img {
+        height: 200px;
+        width: 300px;
+      }
+
+      figcaption {
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        font-style: italic;
+      }
+
+      .resume {
+        background-color: #cee6f3;
+        margin-top: 20px;
+        padding: 30px;
+        margin-bottom: 50px;
+      }
+
+      .resume-button {
+        background-color: #F4E0B9;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      .resume-title {
+        font-size: 30px;
+      }
+
+      .contact {
+        background-color: #cee6f3;
+        padding: 30px;
+      }
+
+      .contact-title {
+        font-size: 30px;
+      }
+
+      .footer-icons img {
+        padding: 10px;
+        height: 50px;
+      }
+
+      .footer-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .copyright-text {
+        display: block;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .intro-page {
+          font-size: 40px;
+          padding: 0px;
+        }
+
+        .name h1 {
+          margin-top: 0px;
+        }
+
+        .about-content {
+          font-size: 20px;
+        }
+
+        .projects {
+          display: grid;
+          grid-template-rows: repeat(6, 250px);
+          grid-template-columns: repeat(1, 400px);
+          padding: 0px;
+          padding-bottom: 20px;
+        }
+
+        #project1 {
+          grid-row: 1/2;
+          grid-column: 1/2;
+        }
+
+        #project2 {
+          grid-row: 2/3;
+          grid-column: 1/2;
+        }
+
+        #project3 {
+          grid-row: 3/4;
+          grid-column: 1/2;
+        }
+
+        #project4 {
+          grid-row: 4/5;
+          grid-column: 1/2;
+        }
+
+        #project5 {
+          grid-row: 5/6;
+          grid-column: 1/2;
+        }
+
+        #project6 {
+          grid-row: 6/7;
+          grid-column: 1/2;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="intro-page">
+      <div class="name">
+        <h1>Hello! Gayathri here</h1>
+      </div>
+      <div class="photo">
+        <img alt="My photo" src="./assets/MyPhoto.jpeg" />
+      </div>
+    </div>
+
+    <div class="about-title">
+      <h2 class="about">About Me</h2>
+      <p class="about-content">
+        I'm a Testing Engineer aspiring to be a Front End Developer. <br />
+        I'm into psychology that is related to human behaviour.<br />
+        I ❤️ Photography and Editing.
+      </p>
+    </div>
+
+    <div class="project-title">
+      <h2>My Projects</h2>
+    </div>
+    <div class="projects">
+      <div id="project1">
+        <figure>
+          <a href="https://gayathri229.github.io/CapstoneProject1/">
+            <img src="./assets/CapstoneProject1.png" alt="CapstoneProject1" />
+          </a>
+          <figcaption>HTML Resume Project</figcaption>
+        </figure>
+      </div>
+      <div id="project2">
+        <figure>
+          <a href="https://gayathri229.github.io/CSSFlagProject/">
+            <img src="./assets/CSSFlagProject.png" alt="CSSFlag" />
+          </a>
+          <figcaption>CSS Flag</figcaption>
+        </figure>
+      </div>
+
+      <div id="project3">
+        <figure>
+          <a href="https://gayathri229.github.io/WebDesignAgencyProject/">
+            <img
+              src="./assets/WebDesignAgencyProject.png"
+              alt="WebDesignAgencyProject"
+            />
+          </a>
+          <figcaption>Web Design Agency</figcaption>
+        </figure>
+      </div>
+      <div id="project4">
+        <figure>
+          <a href="https://gayathri229.github.io/MondrianFlagProject/">
+            <img
+              src="./assets/MondrianFlagProject.png"
+              alt="MondrianFlagProject"
+            />
+          </a>
+          <figcaption>Mondrian Flag</figcaption>
+        </figure>
+      </div>
+      <div id="project5">
+        <figure>
+          <a href="https://gayathri229.github.io/FlexBoxPricingTable/">
+            <img
+              src="./assets/FlexBoxResponsiveProject.png"
+              alt="FlexBoxPricingTable"
+            />
+          </a>
+          <figcaption>Flex Box Responsive Pricing Table</figcaption>
+        </figure>
+      </div>
+      <div id="project6">
+        <figure>
+          <a href="https://gayathri229.github.io/MotivationMeme/">
+            <img
+              src="./assets/MotivationMemeProject.png"
+              alt="MotivationMeme"
+            />
+          </a>
+          <figcaption>Motivation Meme</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="resume">
+      <h2 class="resume-title">My Resume</h2>
+      <div class="resume-content">
+        <a href="./assets/Gayathri_Resume.pdf">
+          <button type="button" class="resume-button">
+            Checkout my resume
+          </button></a
+        >
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2 class="contact-title">Contact Me</h2>
+      <p>gayathriarumugam229@gmail.com</p>
+      <p>9677576153</p>
+    </div>
+
+    <hr />
+
+    <div class="footer">
+      <footer>
+        <div class="footer-icons">
+          <a
+            href="https://www.linkedin.com/in/gayathri-arumugam-0a5676191/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BKmO7WEwJQu6TWSa%2Bj%2BX8zA%3D%3D"
+          >
+            <img src="./assets/LinkedinLogo3.png" />
+          </a>
+          <a href="https://github.com/Gayathri229">
+            <img src="./assets/githubLogo.png" />
+          </a>
+          <a href="https://www.instagram.com/_gayathriarumugam_/">
+            <img src="./assets/instaLogo.png" />
+          </a>
+        </div>
+        <div class="copyright-text">
+          <p>© All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
